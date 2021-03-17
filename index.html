@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Catch the Sound</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+
+    <div class="main">
+    <div class="container">
+        <div class="menu">
+            <h1> Catch The Sound </h1>
+            
+            <p id="welcome">
+                Welcome Players!!!.
+            </p>
+
+            <p id="chance_prompt" class="hidden" >
+              Game started. Good Luck. 
+              You have <span id="life"></span> lives left. <br><br>
+              Time: <span id="time"></span>
+            </p>
+            <!-- start and end button -->
+            <button id="startBtn" onclick="startGame()"> Start </button>
+            <button class="hidden" id="endBtn" onclick="stopGame()"> End </button>
+        
+        </div>
+
+        <div class="game">
+            <!-- Four buttons -->
+            <div id="gameButtonArea"> 
+                <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()">  </button>
+                <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()"> </button>
+                <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()">  </button>
+                <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()">  </button>
+                <button id="button5" onclick="guess(5)" onmousedown="startTone(5)" onmouseup="stopTone()">  </button>
+                <button id="button6" onclick="guess(6)" onmousedown="startTone(6)" onmouseup="stopTone()">  </button>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="instructions">
+      <h2>Instructions</h2>
+      <ul>
+        <li>Click the <button id="startBtn">Start</button> to Play </li>
+        <br>
+        <li>You will hear different sounds from each buttons</li>
+        <li>Catch all the right buttons as they light up</li>
+        <li>Try to remeber the sequence either from the sounds or the light from button</li>
+        <br>
+        <li> <i style="color: #6D213C;">To win press all the buttons in order</i></li>
+        <li>You get <span style="font-size: 2em;"> 2 </span> chances</li>
+        <li>You get <span style="font-size: 2em;">5</span> seconds to press the right order</li>
+
+      </ul>
+
+    </div>
+    
+  </div>
+    <!--  Glitch Menu
+          include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <!--<div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js" defer></script> -->
+  </body>
+</html>

@@ -1,0 +1,149 @@
+/* CSS files add styling rules to your content */
+
+/* general styles*/
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  background-color: #FCFAFA;
+  color: #011627;
+}
+
+h1 {
+  font-style: italic;
+  color: #011627;
+  font-family: verdana, arial, sans-serif; 
+
+}
+
+button{
+  padding : 10px;
+  border-radius : 10px;
+}
+
+.main{
+    max-width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.container{
+  /* width: 50%;
+  height: 100%;
+  margin: 0 auto; */
+  /* grid-column-start: 2;
+  grid-column-end: 3; */
+  grid-column: 2 / 3;
+}
+
+.menu{
+   /* display: flex;
+   flex-direction: column;
+   align-items: center; */
+   text-align: center;
+}
+
+.game{
+  width: 80%;
+   margin: 20px auto;
+}
+
+#gameButtonArea{
+    text-align:center;
+    padding: 10px;
+}
+
+
+ul{
+list-style-type:square;
+padding: 10px;
+margin-top: 0;
+margin-left: 10px;
+}
+/* end of general styles */
+
+
+.instructions h2{
+  margin-bottom: 0;
+}
+
+/* chances */
+#life{
+  font-size: 2em;
+}
+
+/* start and end button*/
+.menu > button{
+  padding: 10px 40px;
+}
+
+/* four buttons styling*/
+#gameButtonArea > button{
+  width: 200px;
+  height : 200px;
+  margin : 8px;
+}
+
+#button1{
+  background-color: #75BBA7;
+}
+
+#button2{
+  background-color: #A9B3CE;
+}
+
+#button3{
+    background-color: #D7B8F3;
+}
+
+#button4{
+    background-color: #D1D0A3;
+}
+
+#button5{
+    background-color: white;
+}
+
+#button6{
+    background-color: bisque;
+}
+
+
+#button1:active, #button1.lit{
+  background-color: #315659;
+}
+
+#button2:active, #button2.lit{
+  background-color: #253031;
+}
+
+#button3:active, #button3.lit{
+    background-color: #885A89;
+}
+
+#button4:active, #button4.lit{
+    background-color: #877666;
+}
+
+#button5:active, #button5.lit{
+    background-color: #2D3047;
+}
+
+#button6:active, #button6.lit{
+    background-color: #FF9F1C;
+}
+
+/* end of four buttons styling */
+
+
+/* start and stop button stylings*/
+.hidden{
+  display: none;
+}
+
+/* end of start and stop button styling*/
+
+
+
+
