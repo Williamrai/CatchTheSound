@@ -8,5 +8,5 @@ The purpose of this game is to make players remeber and take action quickly.
 ![Application Walkthrough](catch_sound1.gif)
 ---
 ![](catch_sound2.gif)
-
+---
 ![](catch_sound3.gif)
