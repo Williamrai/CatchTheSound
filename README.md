@@ -51,3 +51,6 @@ The main logic of the game was written in a single code file so it became to tra
     - take out the code in nested if statements and write a functions for that 
 - use arrow functions
 - everything is in a single file, made different files and learn to make modules for the functions 
+
+## My Five Minute Interview Recording
+
